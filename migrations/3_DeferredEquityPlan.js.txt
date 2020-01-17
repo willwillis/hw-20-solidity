@@ -1,0 +1,7 @@
+const DeferredEquityPlan = artifacts.require("DeferredEquityPlan");
+
+module.exports = function(deployer) {
+  const employee_one = 0x443B02B822a19BB96e64a9A673EdAA4027eD9b62;
+
+  deployer.deploy(DeferredEquityPlan, employee_one, {value: 1});
+};
